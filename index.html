@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Guess which Language?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-group">
+            <textarea id="test_phrase" class="form-control" rows="10" placeholder="Enter English, Hindi, Spanish, or French text here."></textarea>
+        </div>
+        <button class="btn btn-primary" id="test_button" onclick="go();">Guess Language</button>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Language</th>
+                <th>Probability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  class="success">
+                <td id="result_1"></td>
+                <td id="probalility_1"></td>
+            </tr>
+            <tr  class="warning">
+                <td id="result_2"></td>
+                <td id="probalility_2"></td>
+            </tr>
+            <tr  class="warning">
+                <td id="result_3"></td>
+                <td id="probalility_3"></td>
+            </tr>
+            <tr  class="warning">
+                <td id="result_4"></td>
+                <td id="probalility_4"></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <script src="js/lang-guess.js"></script>
+</body>
+
+</html>
